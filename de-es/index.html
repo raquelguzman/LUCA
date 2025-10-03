@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Multilinguales Hörbuch Deutsch & Spanisch</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    padding: 50px;
-  }
-  h1 {
-    color: #2a7ae2;
-  }
-  p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  audio {
-    margin-top: 20px;
-    outline: none;
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>LUCA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      background-image: url('GITHUB.png'); /* Dein Bild */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: black;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: bold;
+      font-size: 72px; /* kannst du nach Gefühl anpassen */
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: "SF Compact Text", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: "SF Compact Text", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: normal;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      font-family: "SF Compact Text", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 70%; /* Player schön breit machen */
+      max-width: 500px;
+    }
+  </style>
 </head>
 <body>
+  <h1>LUCA</h1>
+  <h2>Ein mehrsprachiges Hörbuch begleitet von einem Bilderbuch</h2>
+  <h3>Maturaarbeit von Raquel Guzmán</h3>
 
-<h1>Multilinguales Hörbuch – Deutsch & Spanisch</h1>
-<p>Höre jetzt das Probeaudio:</p>
+  <div class="subtitle">Hörbuch Deutsch <b>(fett)</b> - <i>Spanisch</i></div>
+  <div class="subtext">Das bilinguale Abenteuer kann beginnen:</div>
 
-<audio controls preload="none">
-  <source src="https://github.com/raquelguzman/LUCA/blob/main/de-es/probedeutschspanisch.mp3?raw=true" type="audio/mpeg">
-  Dein Browser unterstützt kein Audio.
-</audio>
-
-<p>Hier kannst du später noch einen kurzen Text über das Hörbuch einfügen.</p>
-
+  <audio controls>
+    <source src="probedeutschspanisch.mp3" type="audio/mpeg">
+    Dein Browser unterstützt das Audio-Element nicht.
+  </audio>
 </body>
 </html>
