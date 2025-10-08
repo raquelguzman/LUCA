@@ -7,7 +7,7 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-      background-image: url('GITHUB3.png'); /* Dein Bild */
+      background-image: url('GITHUB3.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -18,9 +18,9 @@
 
     h1 {
       font-family: "SF Pro Display Black", "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
-      font-weight: 900; /* sehr fett */
-      font-size: 72px;  /* nach Bedarf anpassen */
-      margin-bottom: 20px
+      font-weight: 900;
+      font-size: 72px;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -49,15 +49,23 @@
       margin-bottom: 30px;
     }
 
-    audio {
-      display: block;
+    /* NEUER AUDIO-CONTAINER */
+    .audio-container {
+      width: 500px;                     /* feste Breite der Box */
+      max-width: 100%;                  /* passt sich an kleine Bildschirme an */
       margin: 20px auto;
-      width: 90%;          /* passt sich an den Bildschirm an */
-      max-width: 500px;    /* bleibt auf großen Screens kompakt */
-      height: 50px;        /* ein bisschen kleiner, dann passt es */
+      background-color: rgb(128,162,190); /* Box-Hintergrundfarbe */
+      border: 3px solid rgb(128,162,190); /* Rand in der gleichen Farbe */
       border-radius: 10px;
-      background-color: #fff;
-      box-sizing: border-box; /* verhindert, dass Padding die Höhe sprengt */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .audio-container audio {
+      width: 100%;       /* Player füllt die Box komplett aus */
+      height: 60px;      /* feste Höhe */
+      border-radius: 10px;
+      background-color: #fff; /* Player selbst weiß, Box außen Farbe */
     }
   </style>
 </head>
@@ -66,12 +74,15 @@
   <h2>Ein mehrsprachiges Hörbuch begleitet von einem Bilderbuch</h2>
   <h3>Maturaarbeit von Raquel Guzmán</h3>
 
-<div class="subtitle"><b>Deutsch</b> - <i style="font-weight: normal;">Französisch</i></div>
+  <div class="subtitle"><b>Deutsch</b> - <i style="font-weight: normal;">Französisch</i></div>
   <div class="subtext">Das bilinguale Abenteuer kann beginnen!</div>
 
-  <audio controls>
-    <source src="DEUTSCH - Französisch.mp3" type="audio/mpeg">
-    Dein Browser unterstützt das Audio-Element nicht.
-  </audio>
+  <!-- NEUER AUDIO-CONTAINER -->
+  <div class="audio-container">
+    <audio controls>
+      <source src="DEUTSCH - Französisch.mp3" type="audio/mpeg">
+      Dein Browser unterstützt das Audio-Element nicht.
+    </audio>
+  </div>
 </body>
 </html>
