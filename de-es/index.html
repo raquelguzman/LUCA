@@ -53,10 +53,11 @@
       display: block;
       margin: 20px auto;
       width: 90%;          /* passt sich an den Bildschirm an */
-      max-width: 500px;    /* bleibt auf großen Screens schön kompakt */
-      height: 50px;        /* immer gleich groß */
-      border-radius: 10px; /* leicht abgerundet, sieht sauber aus */
-      background-color: #fff; /* Hintergrund fixen, falls Safari spinnt */
+      max-width: 500px;    /* bleibt auf großen Screens kompakt */
+      height: 50px;        /* ein bisschen kleiner, dann passt es */
+      border-radius: 10px;
+      background-color: #fff;
+      box-sizing: border-box; /* verhindert, dass Padding die Höhe sprengt */
     }
     
   </style>
