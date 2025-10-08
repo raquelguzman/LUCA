@@ -7,7 +7,7 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-      background-image: url('GITHUB.png'); /* Dein Bild */
+      background-image: url('GITHUB3.png'); /* Dein Bild */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -50,9 +50,14 @@
     }
 
     audio {
-      margin-top: 20px;
-      width: 70%; /* Player schön breit machen */
-      max-width: 500px;
+      display: block;
+      margin: 20px auto;
+      width: 90%;          /* passt sich an den Bildschirm an */
+      max-width: 500px;    /* bleibt auf großen Screens kompakt */
+      height: 50px;        /* ein bisschen kleiner, dann passt es */
+      border-radius: 10px;
+      background-color: #fff;
+      box-sizing: border-box; /* verhindert, dass Padding die Höhe sprengt */
     }
   </style>
 </head>
@@ -65,7 +70,7 @@
   <div class="subtext">Das bilinguale Abenteuer kann beginnen!</div>
 
   <audio controls>
-    <source src="probedeutschspanisch.mp3" type="audio/mpeg">
+    <source src="DEUTSCH - Französisch.mp3" type="audio/mpeg">
     Dein Browser unterstützt das Audio-Element nicht.
   </audio>
 </body>
